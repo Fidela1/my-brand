@@ -58,3 +58,15 @@ function myFunction(blog) {
 
 }
 
+  const workWrapper = document.getElementById("workWrapper");
+  const scrollLeftBtn = document.getElementById("scrollLeft");
+  const scrollRightBtn = document.getElementById("scrollRight");
+
+  scrollLeftBtn.addEventListener("click", () => {
+    workWrapper.scrollBy({ left: -300, behavior: "smooth" });
+  });
+
+  scrollRightBtn.addEventListener("click", () => {
+    workWrapper.scrollBy({ left: 300, behavior: "smooth" });
+  });
+

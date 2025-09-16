@@ -7,166 +7,242 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/style.css">
   <script src="https://kit.fontawesome.com/38e575bd3f.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+
   <title>My website</title>
 </head>
 
 <body>
 
+  <nav class="bg-slate-900 text-white flex justify-between px-20 py-4">
+  <h1 class="text-cyan-400 font-bold text-xl">MyPortfolio</h1>
   <div>
-    <header class="nav-bar">
-      <div class="logo">TF</div>
-      <div class="header">
-        <a href="#home">Home</a>
-        <a href="#about">AboutMe</a>
-        <a href="#skills">Skills</a>
-        <a href="#myWork">MyWork</a>
-        <a href="#blogs">Blogs</a>
-        <a href="#contact">Contact</a>
-        <!-- <a href="admin.html">Admin</a> -->
-      </div>
-      </div>
-      <div class="toggle">
-        <span class="line-toggle"></span>
-        <span class="line-toggle"></span>
-        <span class="line-toggle"></span>
-      </div>
-    </header>
-    <div class="sidebar" id="myDIV">
-      <a href="#home">Home</a><br>
-      <a href="#about">AboutMe</a><br>
-      <a href="#skills">Skills</a><br>
-      <a href="#myWork">MyWork</a><br>
-      <a href="#blogs">Blogs</a><br>
-      <a href="#contact">Contact</a><br>
-      <a href="login.html">Login</a><br>
+    <a href="#home" class="mx-3 hover:text-pink-400">Home</a>
+    <a href="#about" class="mx-3 hover:text-pink-400">About</a>
+    <a href="#skills" class="mx-3 hover:text-pink-400">Skills</a>
+    <a href="#projects" class="mx-3 hover:text-pink-400">Projects</a>
+    <a href="#contact" class="mx-3 hover:text-pink-400">Contact</a>
+  </div>
+</nav>
+
+<section id="home" class="bg-slate-900 text-white py-20">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12">
+    
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-bold">
+        Hello, I'm <span class="text-cyan-400">Fidela</span>
+      </h1>
+      <p class="mt-4 text-lg text-gray-300">
+        A passionate <span class="text-pink-400">Web Developer</span> building modern and responsive web applications.
+      </p>
+      <a href="#projects"
+         class="mt-6 inline-block px-6 py-3 bg-cyan-400 text-slate-900 font-bold rounded-lg 
+                hover:bg-pink-400 hover:text-white transition">
+        View My Work
+      </a>
     </div>
-    <section class="title">
 
-      <div class="home">
-      <div class="home-title">
-        <h1>Web Developer</h1>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s<br/> when an unknown printer took a galley of type 
-          </p>
-        <a href="login.html"><button>Login</button></a>
-        </div>
-        <div class="shape-background">
-          <img src="./img/home-img.png" alt="Home">
+    <div class="mt-10 md:mt-0 md:w-1/2 flex justify-center">
+      <img src="img/hello.jpg" alt="Fidela's Photo"
+           class="w-64 h-64 rounded-full border-4 border-cyan-400 shadow-lg object-cover">
+    </div>
 
+  </div>
+</section>
+
+
+  <section id ="about" class="bg-slate-900 text-white py-20">
+  <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12">
+    
+    <div class="about-image md:w-1/2 flex justify-center md:justify-start">
+      <img src="img/hello2.jpg" alt="About Me"
+           class="w-72 h-72 md:w-96 md:h-96 rounded-lg shadow-lg object-cover border-4 border-cyan-400">
+    </div>
+
+    <div class="about-content md:w-1/2 text-center md:text-left mt-10 md:mt-0 md:pl-12">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4 text-cyan-400">About Me</h1>
+      <p class="text-gray-300 leading-relaxed">
+        When I finished my High school I realised how much I had left to learn.
+        A traditional education had given me specialised knowledge but hadn't
+        set me up with the skills needed to succeed in an environment of constant change.
+      </p>
+      <p class="text-gray-300 mt-4 leading-relaxed">
+        So I set out to answer the question: 
+        <span class="text-pink-400 italic">"What knowledge and skills do I need to thrive in the 21st century?"</span>  
+        <br><br>
+        MetaLearn is my map of that journey. I've documented everything I've learned
+        from years of personal study and conversations.
+      </p>
+      <button 
+        class="mt-6 px-6 py-3 bg-cyan-400 text-slate-900 font-bold rounded-lg shadow-lg 
+               hover:bg-pink-400 hover:text-white transition">
+        Hire Me
+      </button>
+    </div>
+
+  </div>
+</section>
+
+
+   <section id="skills" class="bg-slate-900 text-white py-20">
+  <div class="container mx-auto px-6 md:px-12">
+    <h1 class="text-3xl md:text-4xl font-bold text-center text-cyan-400 mb-16">My Skills</h1>
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg" alt="HTML" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">HTML</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg" alt="CSS" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">CSS</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="JavaScript" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">JavaScript</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-original.svg" alt="Git" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">Git</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="GitHub" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">GitHub</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React.js" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">React.js</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original.svg" alt="Node.js" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">Node.js</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="PHP" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">PHP</p>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="Java" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">Java</p>
       </div>
       
+       <div class="bg-gray-800 rounded-xl p-6 flex flex-col items-center text-center hover:scale-105 transform transition duration-300">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg" alt="Figma" class="w-16 h-16 mb-4">
+        <p class="font-semibold text-lg">Figma</p>
       </div>
+    </div>
+  </div>
+</section>
+
+
+
+    <section id="myWork" class="bg-slate-900 text-white py-20 px-6">
+  <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">My Work</h1>
+
+  <div class="flex items-center gap-6">
+    <!-- Left Arrow -->
+    <button id="scrollLeft" class="p-3 rounded-full bg-slate-700 hover:bg-slate-600 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <!-- Scrollable Wrapper -->
+    <div id="workWrapper" class="flex overflow-x-auto space-x-6 scrollbar-hide snap-x snap-mandatory w-full">
       
-    </section>
-    <section id="about">
-
-
-      <div class=" about-me">
-        <div class="about-image">
-          <img src="/img/Home.jpeg" alt="2">
+      <!-- Card 1 -->
+      <div class="group perspective snap-center flex-shrink-0">
+        <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+          <!-- Front -->
+          <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
+            <img src="/img/app.PNG" alt="App Design" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4 text-center">
+              <p class="text-sm text-gray-300">Sunday, November 13 1:00 pm EDT / 11:00 PDT</p>
+              <h4 class="font-semibold mt-2">Figma design of music app</h4>
+            </div>
+          </div>
+  
         </div>
-        <div class="about-content">
-          <h1>About Me</h1>
-          <p>When I finished my High school I realised how much I had left to learn.
-            A traditional education had given me specialised knowledge but hadn't
-            set me up with the skills needed to succeed in an environment of constant change.
+      </div>
 
-            So I set out to answer the question "What knowledge and skills
-            do I need to thrive in the 21st century?
-
-            "MetaLearn is my map of that journey. I've documented
-            everything I've learned from years of personal study and
-            conversations.
-          <p>
-            <button>Hire Me</button>
+      <!-- Card 2 -->
+      <div class="group perspective snap-center flex-shrink-0">
+        <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+          <!-- Front -->
+          <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
+            <img src="/img/C.PNG" alt="Design Work" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4 text-center">
+              <p class="text-sm text-gray-300">Monday, November 13 1:00 pm EDT / 16:00 PDT</p>
+              <h4 class="font-semibold mt-2">Figma design of music app</h4>
+            </div>
+          </div>
+   
+        
         </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="group perspective snap-center flex-shrink-0">
+        <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+          <!-- Front -->
+          <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
+            <img src="/img/C.PNG" alt="Design Work" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4 text-center">
+              <p class="text-sm text-gray-300">Monday, November 13 1:00 pm EDT / 16:00 PDT</p>
+              <h4 class="font-semibold mt-2">Figma design of music app</h4>
+            </div>
+          </div>
+   
+        
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="group perspective snap-center flex-shrink-0">
+        <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+          <!-- Front -->
+          <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
+            <img src="/img/C.PNG" alt="Design Work" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4 text-center">
+              <p class="text-sm text-gray-300">Monday, November 13 1:00 pm EDT / 16:00 PDT</p>
+              <h4 class="font-semibold mt-2">Figma design of music app</h4>
+            </div>
+          </div>
+   
+        
+        </div>
+      </div>
 
-       
-      </div>
-    </section>
-    <section id="skills" class="skills">
-      
-      <h1>My Skills</h1>
-      <div class="my-skill">
-<div class="hcss">
-      <p>HTML</p>
-      <div class="my-skills">
-        <div class="knowledge  html"></div>
-      </div>
-
-      <p>CSS</p>
-      <div class="my-skills">
-        <div class="knowledge css"></div>
-      </div>
-      <p>Node js</p>
-      <div class="my-skills">
-        <div class="knowledge node"></div>
+      <!-- Card 3 -->
+      <div class="group perspective snap-center flex-shrink-0">
+        <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
+          <!-- Front -->
+          <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
+            <img src="/img/Capture.PNG" alt="Personal Website" class="w-full h-48 object-cover rounded-t-xl">
+            <div class="p-4 text-center">
+              <p class="text-sm text-gray-300">Sunday, November 13 1:00 pm EDT / 11:00 PDT</p>
+              <h4 class="font-semibold mt-2">HTML code to build personal website</h4>
+            </div>
+          </div>
+        
+        </div>
       </div>
     </div>
-    <div class="java">
-      <p>JavaScript</p>
-      <div class="my-skills">
-        <div class="knowledge  js"></div>
-      </div>
 
-      <p>React js</p>
-      <div class="my-skills">
-        <div class="knowledge react"></div>
-      </div>
-      <p>Github</p>
-      <div class="my-skills">
-        <div class="knowledge  github"></div>
-      </div>
-    </div>
-    </div>
-    </section>
-    <section id="myWork" class="myWork">
-      <h1>MyWork</h1>
-
-
-<div class="services">
-  <div class="card1">
-  <div>
-  <img src="./img/smartphone.png" alt="Avatar" width="20%">
-</div>
-  <div class="content">
-    <h4><b>UI/Ux design</b></h4> 
-    <p>Create a positive user experience that encourages customers
-       to stick with a brand or product and decides how the user interface works.</p> 
+    <!-- Right Arrow -->
+    <button id="scrollRight" class="p-3 rounded-full bg-slate-700 hover:bg-slate-600 transition">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
   </div>
-</div>
-<div class="card2">
-  <div>
-  <img src="./img/smartphone.png" alt="Avatar" width="20%">
-</div>
-  <div class="content">
-    <h4><b>Software Developer</b></h4> 
-    <p>Write code using programming languages build software 
-      components and test their designs
-      components and test their designs 
-    </p> 
-  </div>
-</div>
-<div class="card3">
-  <div>
-  <img src="./img/smartphone.png" alt="Avatar" width="20%">
-</div>
-  <div class="content">
-    <h4><b>Software Engineer</b></h4> 
-    <p>Apply engineering principles and knowledge of programming languages
-       to build software solutions for end users
-       to build software solutions for end users.</p> 
-      </p> 
-  </div>
-</div>
-      <!-- <div class="card-content">
-        <p>This is the content of the card. You can add text, images, and other elements here.</p>
-    </div>
-    <div class="card-content">
-      <p>This is the content of the card. You can add text, images, and other elements here.</p>
-  </div> -->
-      </div>
-    </section>
+</section>
+
 
 
     <section id="blogs" class="my-blogs">
