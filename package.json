@@ -10,5 +10,19 @@
   "license": "ISC",
   "dependencies": {
     "froala-editor": "^4.0.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fidela1/my-brand.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Fidela1/my-brand/issues"
+  },
+  "homepage": "https://github.com/Fidela1/my-brand#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.13"
   }
 }
