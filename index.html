@@ -147,22 +147,19 @@
   <h1 class="text-3xl md:text-4xl font-bold text-center mb-12">My Work</h1>
 
   <div class="flex items-center gap-6">
-    <!-- Left Arrow -->
+ 
     <button id="scrollLeft" class="p-3 rounded-full bg-slate-700 hover:bg-slate-600 transition">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
       </svg>
     </button>
 
-    <!-- Scrollable Wrapper -->
     <div id="workWrapper" class="flex overflow-x-auto space-x-6 scrollbar-hide snap-x snap-mandatory w-full">
-      
-      <!-- Card 1 -->
+
       <div class="group perspective snap-center flex-shrink-0">
         <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-          <!-- Front -->
           <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
-            <img src="/img/app.PNG" alt="App Design" class="w-full h-48 object-cover rounded-t-xl">
+            <img src="/img/Capture.PNG" alt="App Design" class="w-full h-48 object-cover rounded-t-xl">
             <div class="p-4 text-center">
               <p class="text-sm text-gray-300">Sunday, November 13 1:00 pm EDT / 11:00 PDT</p>
               <h4 class="font-semibold mt-2">Figma design of music app</h4>
@@ -172,10 +169,8 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
       <div class="group perspective snap-center flex-shrink-0">
         <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-          <!-- Front -->
           <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
             <img src="/img/C.PNG" alt="Design Work" class="w-full h-48 object-cover rounded-t-xl">
             <div class="p-4 text-center">
@@ -187,10 +182,9 @@
         
         </div>
       </div>
-      <!-- Card 2 -->
       <div class="group perspective snap-center flex-shrink-0">
         <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-          <!-- Front -->
+
           <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
             <img src="/img/C.PNG" alt="Design Work" class="w-full h-48 object-cover rounded-t-xl">
             <div class="p-4 text-center">
@@ -202,10 +196,9 @@
         
         </div>
       </div>
-      <!-- Card 2 -->
       <div class="group perspective snap-center flex-shrink-0">
         <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-          <!-- Front -->
+
           <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
             <img src="/img/C.PNG" alt="Design Work" class="w-full h-48 object-cover rounded-t-xl">
             <div class="p-4 text-center">
@@ -218,10 +211,9 @@
         </div>
       </div>
 
-      <!-- Card 3 -->
       <div class="group perspective snap-center flex-shrink-0">
         <div class="relative w-72 h-80 transition-transform duration-700 transform-style-preserve-3d group-hover:rotate-y-180">
-          <!-- Front -->
+
           <div class="absolute inset-0 bg-slate-800 rounded-xl shadow-lg flex flex-col items-center justify-center backface-hidden">
             <img src="/img/Capture.PNG" alt="Personal Website" class="w-full h-48 object-cover rounded-t-xl">
             <div class="p-4 text-center">
@@ -234,7 +226,6 @@
       </div>
     </div>
 
-    <!-- Right Arrow -->
     <button id="scrollRight" class="p-3 rounded-full bg-slate-700 hover:bg-slate-600 transition">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -244,34 +235,57 @@
 </section>
 
 
+<section id="blog" class="bg-slate-900 text-white py-20">
+  <div class="container mx-auto px-6 md:px-12">
 
-    <section id="blogs" class="my-blogs">
+    <div class="text-center mb-12">
+      <h1 class="text-3xl md:text-4xl font-bold mb-4">My Blog</h1>
+      <p class="text-gray-300 max-w-2xl mx-auto">
+        Here are some of my thoughts and experiences about web development, design, and learning journey.
+      </p>
+    </div>
 
-      <h1>Blogs</h1>
-      <div class="mine">
-        <div class="all">
-          <div id="blog-card"></div>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+
+      <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+        <img src="img/8.jpg" alt="Blog 1" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Getting Started with Web Development</h2>
+          <p class="text-gray-400 mb-4">
+            My journey into web development and the key steps I followed to start building websites.
+          </p>
+          <a href="#" class="text-blue-400 hover:underline">Read more →</a>
         </div>
       </div>
-      <a href="#" class="previous">&laquo; Previous</a>
-      <a href="#" class="next">Next &raquo;</a>
-      <section id="contact" class="contact">
-        <div class="container">
-         
-          <form id="form" class="contact-form" method="post" name="form" onsubmit="return validated()">
-            <h1>Contact Me</h1>
-            <div class="form-control">
-              <label for="name">Name</label>
-              <input autocomplete="off" type="text" id="firstname" placeholder="Your name.." name="username">
-              <div id="user_error"></div>
-            </div>
-            <div class="form-control">
-              <label>Email</label>
-              <input type="text" class="email" placeholder="Email Address" />
 
-              <div class="update"></div>
+      <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+        <img src="img/4.jpg" alt="Blog 2" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Why I Love TailwindCSS</h2>
+          <p class="text-gray-400 mb-4">
+            Tailwind has changed the way I build UIs. Here's why I enjoy working with it.
+          </p>
+          <a href="#" class="text-blue-400 hover:underline">Read more →</a>
+        </div>
+      </div>
 
-            </div>
+      <div class="bg-slate-800 rounded-xl overflow-hidden shadow-lg hover:scale-105 transition-transform">
+        <img src="img/5.jpg" alt="Blog 3" class="w-full h-48 object-cover">
+        <div class="p-6">
+          <h2 class="text-xl font-semibold mb-2">Balancing Learning & Projects</h2>
+          <p class="text-gray-400 mb-4">
+            How I manage my time between learning new concepts and applying them in real projects.
+          </p>
+          <a href="#" class="text-blue-400 hover:underline">Read more →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+   
+
+           
             <div class="form-control">
               <label for="message">Message</label>
               <textarea autocomplete="off" id="message" cols="20" rows="5" name="message"></textarea>
