@@ -284,29 +284,88 @@
 </section>
 
    
+<!-- Contact Section -->
+<section id="contact" class="bg-slate-900 text-white py-16">
+  <div class="container mx-auto px-6 md:px-12 grid md:grid-cols-2 gap-12">
+    
+    <!-- Left: Contact Info -->
+    <div>
+      <h2 class="text-3xl font-bold mb-6">Get in Touch</h2>
+      <p class="text-slate-400 mb-6">I’d love to hear from you! Whether you have a question or just want to say hello, feel free to send me a message.</p>
+      <ul class="space-y-4">
+        <li><i class="fas fa-envelope text-blue-500"></i> yourname@email.com</li>
+        <li><i class="fas fa-phone text-blue-500"></i> +250 789 123 456</li>
+        <li><i class="fas fa-map-marker-alt text-blue-500"></i> Kigali, Rwanda</li>
+      </ul>
+    </div>
 
-           
-            <div class="form-control">
-              <label for="message">Message</label>
-              <textarea autocomplete="off" id="message" cols="20" rows="5" name="message"></textarea>
-              <div id="mess_error"></div>
-            </div>
-             <input type="submit" value="Submit">
-             </div>
-        <div class="first">
-          <h3>Let's get in touch</h3><br>
-          <p>Feel free to send me a message in the contact form</p>
-          <div class="email">
-           <img src="./img/gmail.png" alt="email logo" width="25px" height="25px">
-           <p>fidelatuyizere4@gmail.com</p>
-          </div>
-          <div class="phone">
-            <img src="./img/phone-call.png" alt="phone call" width="25px" height="25px">
-            <p>+25079999999</p>
-           </div>
-        </div>
-        
-    </section>
+    <!-- Right: Contact Form -->
+    <form class="bg-slate-800 p-6 rounded-2xl shadow-lg space-y-4">
+      <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 focus:outline-none focus:border-blue-500">
+      <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 focus:outline-none focus:border-blue-500">
+      <textarea rows="4" placeholder="Your Message" class="w-full p-3 rounded-lg bg-slate-700 border border-slate-600 focus:outline-none focus:border-blue-500"></textarea>
+      <button class="w-full bg-blue-600 hover:bg-blue-700 transition p-3 rounded-lg font-semibold">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-slate-950 text-slate-400 py-12">
+  <div class="container mx-auto px-6 md:px-12 grid md:grid-cols-4 gap-12">
+    
+    <!-- Logo & About -->
+    <div>
+      <h2 class="text-xl font-bold text-white mb-4">Your Logo</h2>
+      <p class="text-sm">We work to help bring individual students and unique startups together.</p>
+      <p class="mt-4"><i class="fas fa-phone text-blue-500"></i> +250 789 123 456</p>
+      <p><i class="fas fa-envelope text-blue-500"></i> fidelatuyizere4@gmail.com</p>
+    </div>
+
+    <!-- Information -->
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Information</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-blue-400">About Us</a></li>
+        <li><a href="#" class="hover:text-blue-400">Projects</a></li>
+        <li><a href="#" class="hover:text-blue-400">Blog</a></li>
+        <li><a href="#" class="hover:text-blue-400">Testimonials</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Helpful Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:text-blue-400">Services</a></li>
+        <li><a href="#" class="hover:text-blue-400">Support</a></li>
+        <li><a href="#" class="hover:text-blue-400">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:text-blue-400">Privacy Policy</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 class="text-lg font-semibold text-white mb-4">Subscribe for Updates</h3>
+      <form class="flex">
+        <input type="email" placeholder="Enter your email" class="w-full p-3 rounded-l-lg bg-slate-800 border border-slate-600 focus:outline-none focus:border-blue-500">
+        <button class="bg-blue-600 px-4 rounded-r-lg hover:bg-blue-700 transition">Subscribe</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="mt-12 border-t border-slate-800 pt-6 flex flex-col md:flex-row items-center justify-between px-6 md:px-12">
+    <p class="text-sm">&copy; <span id="year"></span> Fidela. All rights reserved.</p>
+    <div class="flex space-x-4 mt-4 md:mt-0">
+      <a href="#" class="p-2 bg-slate-800 rounded-full hover:bg-blue-600 transition"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="p-2 bg-slate-800 rounded-full hover:bg-blue-600 transition"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="p-2 bg-slate-800 rounded-full hover:bg-blue-600 transition"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#" class="p-2 bg-slate-800 rounded-full hover:bg-blue-600 transition"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<script>
+</script>
+
+
       <script src="/script/contact.js"></script>
 
 
