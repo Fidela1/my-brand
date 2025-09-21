@@ -69,4 +69,5 @@ function myFunction(blog) {
   scrollRightBtn.addEventListener("click", () => {
     workWrapper.scrollBy({ left: 300, behavior: "smooth" });
   });
+  document.getElementById("year").textContent = new Date().getFullYear();
 
