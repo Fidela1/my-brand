@@ -1,4 +1,18 @@
 
+
+  const menuBtn = document.getElementById("menu-btn");
+  const closeBtn = document.getElementById("close-btn");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+    if (mobileMenu.classList.contains("hidden")) {
+      menuBtn.textContent = "☰"; 
+    } else {
+      menuBtn.textContent = "x"; 
+    }
+  });
+
 const deleteData = (image, title, desc ) => {
 
   console.log("---here")
